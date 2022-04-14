@@ -1,6 +1,5 @@
 import UIKit
 import WebKit
-import SplunkOtel
 
 class WebViewController: UIViewController {
     
@@ -8,7 +7,7 @@ class WebViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        SplunkRum.integrateWithBrowserRum(self.webView)
+        //SplunkRum.integrateWithBrowserRum(self.webView)
 
         self.webView.load(URLRequest(url: URL(string: "http://pmrum.o11ystore.com/")!))
     }

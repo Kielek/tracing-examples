@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86D3181127165AE500B43379 /* SplunkOtel in Frameworks */ = {isa = PBXBuildFile; productRef = 86D3181027165AE500B43379 /* SplunkOtel */; };
-		86D3181527165AFB00B43379 /* SplunkOtelCrashReporting in Frameworks */ = {isa = PBXBuildFile; productRef = 86D3181427165AFB00B43379 /* SplunkOtelCrashReporting */; };
 		DB8B084226E619EB005B02EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B084126E619EB005B02EB /* AppDelegate.swift */; };
 		DB8B084426E619EB005B02EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B084326E619EB005B02EB /* SceneDelegate.swift */; };
 		DB8B084626E619EB005B02EB /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B084526E619EB005B02EB /* ProductListViewController.swift */; };
@@ -43,8 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB8B086D26E8DF1C005B02EB /* SDWebImage in Frameworks */,
-				86D3181527165AFB00B43379 /* SplunkOtelCrashReporting in Frameworks */,
-				86D3181127165AE500B43379 /* SplunkOtel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +99,6 @@
 			name = "Demo Boutique";
 			packageProductDependencies = (
 				DB8B086C26E8DF1C005B02EB /* SDWebImage */,
-				86D3181027165AE500B43379 /* SplunkOtel */,
-				86D3181427165AFB00B43379 /* SplunkOtelCrashReporting */,
 			);
 			productName = "Demo Boutique";
 			productReference = DB8B083E26E619EB005B02EB /* Demo Boutique.app */;
@@ -135,8 +129,6 @@
 			mainGroup = DB8B083526E619EB005B02EB;
 			packageReferences = (
 				DB8B086B26E8DF1C005B02EB /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				86D3180F27165AE500B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios" */,
-				86D3181327165AFB00B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios-crashreporting" */,
 			);
 			productRefGroup = DB8B083F26E619EB005B02EB /* Products */;
 			projectDirPath = "";
@@ -373,22 +365,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86D3180F27165AE500B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/signalfx/splunk-otel-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
-			};
-		};
-		86D3181327165AFB00B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios-crashreporting" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/signalfx/splunk-otel-ios-crashreporting";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
-			};
-		};
 		DB8B086B26E8DF1C005B02EB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -400,16 +376,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86D3181027165AE500B43379 /* SplunkOtel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86D3180F27165AE500B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios" */;
-			productName = SplunkOtel;
-		};
-		86D3181427165AFB00B43379 /* SplunkOtelCrashReporting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86D3181327165AFB00B43379 /* XCRemoteSwiftPackageReference "splunk-otel-ios-crashreporting" */;
-			productName = SplunkOtelCrashReporting;
-		};
 		DB8B086C26E8DF1C005B02EB /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB8B086B26E8DF1C005B02EB /* XCRemoteSwiftPackageReference "SDWebImage" */;
